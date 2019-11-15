@@ -7,6 +7,7 @@ Deploying machine learning model on IOX-Gateway
 
 ## Installation and Configuration:
 * Clone this repo first and follow the steps to run each Component.
+    > git clone https://github.com/wiprodevnet/iot-ml-deployment.git
 
 ## Steps to Deploy IOXApp
 
@@ -54,7 +55,14 @@ Once you have verified the prerequisites to complete this lab you will:
    5. Deploy the IOx Application
    6. Monitor and review the IOx Application
    7. Test the output of the IOx Application
+         > python3 iotclientapp.py
+   
+## iot-ml-deployment webservice Output:
+![iot-ml-deployment-sample](https://github.com/wiprodevnet/iot-ml-deployment/blob/master/images/sample_output_2.bmp)
+
 
 ## Refer below link for more details
 * https://developer.cisco.com/learning/modules/iox-basic/iot-iox-app-docker/step/1
+
+
 
