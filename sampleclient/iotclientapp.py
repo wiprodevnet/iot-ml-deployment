@@ -3,16 +3,16 @@ Import the json and requests modules
 """
 import json
 import requests
-
+from sample_data import PAYLOAD, FOG_APP_IP
 
 # Define ML server url
-URL = 'http://10.10.20.51:40000'
+URL = 'http://' + FOG_APP_IP
 
-# Define the sample input
-DATA = {'hour': 3
-       }
+#Read json data
+DATA = json.dumps(PAYLOAD)
+print('{input:', DATA, '}')
 
-DATA = json.dumps(DATA)
+#Poat the json payload data to ML server URL
 SEND_REQUEST = requests.post(URL, DATA)
 
 # Print the post result
