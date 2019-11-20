@@ -6,7 +6,7 @@ from flask import Flask, jsonify, request
 import pandas as pd
 
 # load model
-MODEL = pickle.load(open('iotmodel.pkl', 'rb'))
+MODEL = pickle.load(open('../IOTMLmodel/iotmodel2.pkl', 'rb'))
 
 # app
 APP = Flask(__name__)
