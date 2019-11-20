@@ -58,7 +58,10 @@ Once you have verified the prerequisites to complete this lab you will:
          > python3 iotclientapp.py
    
 ## iot-ml-deployment webservice Output:
-![iot-ml-deployment-sample](https://github.com/wiprodevnet/iot-ml-deployment/blob/master/images/sample_output_2.bmp)
+1.Sample output for single variable ML Model  i.e, iotmodel.pkl 
+![iot-ml-deployment-sample Model #1](https://github.com/wiprodevnet/iot-ml-deployment/blob/master/images/sample_output_1.png)
+2.Sample output for multiple categorical variable ML Model i.e, iotmodel2.pkl 
+![iot-ml-deployment-sample Model #2](https://github.com/wiprodevnet/iot-ml-deployment/blob/master/images/sample_output_2.png)
 
 
 ## Refer below link for more details
