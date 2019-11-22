@@ -12,10 +12,13 @@ This sample usecase demonstrates how a pre trained machine learning model can be
 3. sampleclient: Sample rest client application that sends the data in a json format ,  invokes the API get predicted output and prints the json response on screen (see screenshot below) the ip address of edge ML server and payload is selected in 'sample.data.py'
 
 ## Technologies:
-1. Python3
-2. Numpy, pandas, scikit-learn
-2. Flask
-
+Python3
+Numpy
+Pandas
+Scikit-learn
+Pickle
+Flask
+Requests
 
 ## Installation and Configuration:
  Clone this repo first and follow the steps to run each Component
