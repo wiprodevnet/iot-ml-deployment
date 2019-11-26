@@ -24,29 +24,31 @@ This sample usecase demonstrates how a pre trained machine learning model can be
  Clone this repo first and follow the steps to run each Component
    > git clone https://github.com/wiprodevnet/iot-ml-deployment.git
 
-## Create a ML model 
+## Create a ML model (Optional)
 Run the IOTLMLmodle python program to generate ML models. This will create 2 models that needs to be copied to IOXMLApp folder to create the package. Alternatively you could use the prebuild models 'iotmodel.pkl or iotmodel2.pkl'
    > cd  IOTMLmodel
    
    > python3 iot_ml_model.py
   
- 
-## Steps to Deploy IOXApp (Optional)
+## Build and Package IOXApp for Docker
 Build a docker image ,create a package and deploy the package as follows
 
 Build docker image
- > sudo docker build -t iox-mldeploy-test
+ > sudo docker build -t iox-mldeploy-test .
  
 Check built images
  > sudo docker images
  
- Create a package for deployment
-  > sudo ioxclient docker package iox-mldeploy-test:latest
- 
- Run a docker image locally
-  > sudo docker run -p8000:8000 iox-mldeploy-test
+Create a package for deployment
+  > sudo ioxclient docker package iox-mldeploy-test:latest .
+  
+Further reference https://developer.cisco.com/learning/modules/iox-basic/iot-iox-app-docker/step/10
 
-## Steps to Check Deployed IOXApp 
+How to Deploy IOXApp for Docker 
+https://developer.cisco.com/learning/modules/iox-basic/iot-iox-app-docker/step/11
+https://developer.cisco.com/learning/modules/iox-basic/iot-iox-app-docker/step/12
+
+## Check Deployed IOXApp 
  Sample rest client application sends the data selected in 'sample_data.py'
   > python3 iotclientapp.py
 
@@ -93,16 +95,14 @@ One way to get the application template code is to use git. We have the option t
 
 Once you have verified the prerequisites to complete this lab you will:
 
-### Reserve an IOx Sandbox instance:- 
+   0. Reserve an IOx Sandbox instance
    1. Setup a Local Container for the IOx Developer Environment
    2. Create a small IOx Application to run on the Sandbox IOx device
    3. Package the IOx Application with the ioxclient Docker tools
    4. Connect to the DevNet Sandbox
    5. Deploy the IOx Application
    6. Monitor and review the IOx Application
-   7. Test the output of the IOx Application
-         > python3 iotclientapp.py
-   
+   7. Test the output of the IOx Application using the sampleclient
 
 
 ## Refer below link for more details
