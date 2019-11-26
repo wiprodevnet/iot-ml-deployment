@@ -30,7 +30,7 @@ Run the IOTLMLmodle python program to generate ML models. This will create 2 mod
    
    > python3 iot_ml_model.py
   
-## Build and Package IOXApp for Docker
+## Build , Package IOXApp for Docker
 Build a docker image ,create a package and deploy the package as follows
 
 Build docker image
@@ -44,9 +44,11 @@ Create a package for deployment
   
 Further reference https://developer.cisco.com/learning/modules/iox-basic/iot-iox-app-docker/step/10
 
-How to Deploy IOXApp for Docker 
-https://developer.cisco.com/learning/modules/iox-basic/iot-iox-app-docker/step/11
-https://developer.cisco.com/learning/modules/iox-basic/iot-iox-app-docker/step/12
+Deploy IOXApp for Docker              
+  With the IOT ML docker image for IOX is built and connection to sandbox is established, next step is to deploy to IOXGateway.
+  More details on deployment refer to              
+   https://developer.cisco.com/learning/modules/iox-basic/iot-iox-app-docker/step/11          
+   https://developer.cisco.com/learning/modules/iox-basic/iot-iox-app-docker/step/12    
 
 ## Check Deployed IOXApp 
  Sample rest client application sends the data selected in 'sample_data.py'
