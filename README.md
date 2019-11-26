@@ -25,10 +25,10 @@ This sample usecase demonstrates how a pre trained machine learning model can be
    > git clone https://github.com/wiprodevnet/iot-ml-deployment.git
 
 ## Create a ML model 
-Run the IOLMLmodle python porgram to generate ML models. This will create 2 models. Alternatively you could use the prebuild models 'iotmodel.pkl or iotmodel2.pkl'
-   > cd  IOMLmodel
+Run the IOTLMLmodle python program to generate ML models. This will create 2 models that needs to be copied to IOXMLApp folder to create the package. Alternatively you could use the prebuild models 'iotmodel.pkl or iotmodel2.pkl'
+   > cd  IOTMLmodel
    
-   > python3 iot_ml_deploy.py
+   > python3 iot_ml_model.py
   
  
 ## Steps to Deploy IOXApp (Optional)
